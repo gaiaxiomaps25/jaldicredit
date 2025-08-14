@@ -5,66 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jaldi Credit Login and Basic Functions</title>
     <style>
-        /* 一些简单的样式，让页面看起来更整洁 */
         body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            max-width: 800px;
-            margin: 40px auto;
-            padding: 0 20px;
-            background-color: #f4f4f9;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background: #f7f7f7;
         }
-
         h1 {
-            color: #0056b3;
-            border-bottom: 2px solid #e0e0e0;
-            padding-bottom: 10px;
-            text-align: center;
+            margin-bottom: 20px;
         }
-
-        /* 视频容器的样式，使其响应式 */
-        .video-container {
-            position: relative;
-            padding-bottom: 56.25%; /* 16:9 宽高比 */
-            height: 0;
-            overflow: hidden;
-            max-width: 100%;
-            background: #000;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-            margin-top: 30px;
-        }
-
-        .video-container video {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            border: none; /* 移除视频播放器默认边框 */
+        video {
+            width: 576px;
+            height: 1280px;
         }
     </style>
 </head>
 <body>
-
-    <!-- 第一部分：文案 -->
-    <h1>Jaldi Credit Login and Basic Functionality Process</h1>
-
-    <!-- 第二部分：视频 -->
-    <div class="video-container">
-        <!-- 
-          <video> 标签用于在网页中嵌入视频内容。
-          src="jcdesc.mp4" 指定了视频文件的路径。
-          controls 属性会为视频添加播放、暂停、音量等控制条。
-          width="100%" 使视频宽度适应其容器。
-          poster 属性可以设置一个视频加载前显示的封面图片（可选，此处未使用）。
-        -->
-        <video src="jcdesc.mp4" controls width="100%">
-            您的浏览器不支持视频标签。请升级您的浏览器或直接下载视频文件。
-            <!-- 这段文字是备用内容，如果用户的浏览器非常老旧，不支持<video>标签，就会显示这段文字。 -->
-        </video>
-    </div>
-
+    <h1>Jaldi Credit's Login and Basic Function Process</h1>
+    <video controls>
+        <source src="jcdesc.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
 </body>
 </html>
